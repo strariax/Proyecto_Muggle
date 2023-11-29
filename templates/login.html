@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#F2F0C9]">
+  <header class="bg-[#F2F0C9] text-black h-14">
+    <nav class="flex justify-between items-center pt-6"> 
+        <div>
+            <a href="/"><img class="h-32 ml-16" src="../static/logo.webp" alt="Logo"></a>               
+        </div>
+
+    </nav>
+  </header>
+
+<main class="p-8 w-full flex flex-col justify-center " style="height: 30rem;">
+  <form action="" class="bg-[#D5D96C] rounded-lg mx-auto font-['Montserrat'] flex flex-col gap-8 p-6 mt-40">
+    <div class="flex flex-col">
+      <label class="font-bold" for="correo">Correo</label>
+      <input class="rounded" type="text" name="correo" id="correo">
+    </div>
+    <div class="flex flex-col">
+      <label class="font-bold"  for="nombre">Nombre</label>
+      <input class="rounded" type="text" name="nombre" id="nombre">
+    </div>
+    <div class="flex flex-col">
+      <label class="font-bold"  for="contraseña">Contraseña</label>
+      <input class="rounded" type="password" name="contraseña" id="contraseña">
+    </div>
+    <div class="flex flex-col">
+    <label class="font-bold"  for="confirmar_contraseña">Confirmar contraseña</label>
+    <input class="rounded" type="password" name="confirmar_contraseña" id="confirmar_contraseña">
+  </div>
+  <div class="flex w-full justify-around mt-4 font-['Montserrat']">
+    <div>
+        <button class="flex justify-center items-center bg-[#01261C] h-10 w-40 rounded-xl text-white hover:bg-[#F21B6A]"><a href="/perfil_arbol">Ingresar</a> </button>
+    </div>
+  </div>
+  </form>
+
+</main>
+
+</body>
+</html> 

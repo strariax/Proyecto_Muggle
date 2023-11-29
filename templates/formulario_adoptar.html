@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <title>Mi árbol digital</title>
+</head>
+<body class="bg-[#F2F0C9]">
+    <header class="bg-[#F2F0C9] text-black h-14">
+        <nav class="flex justify-between items-center pt-6"> 
+            <div>
+                <a href="/"><img class="h-32 ml-16" src="../static/logo.webp" alt="Logo"></a>               
+            </div>
+
+        </nav>
+    </header>
+    <main class="">
+        <article class="flex items-center w-[50%] mx-auto h-[90vh]">
+                <form action="/formulario_adoptar" method="post" class="w-[50%] flex flex-col items-center justify-around p-8 h-[60vh] w-full bg-[#D5D96C] rounded-lg font-['Montserrat']">
+                    <div class="flex w-full justify-around">
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold ">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" required class="rounded">
+                            
+                        </div>
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" required class="rounded">
+                        </div>                    
+                    </div>
+                    <div class="flex w-full justify-around">
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold">
+                            <label for="fecha_de_nacimiento">Fecha de Nacimiento</label>
+                            <input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento" required class="rounded">
+                        </div>
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold">
+                            <label for="ciudad">Ciudad:</label>
+                        <select name="ciudad" id="ciudad" class="rounded">
+                            <option value="">Ciudad</option>
+                            <option value="asuncion">Asunción</option>
+                            <option value="lambare">Lambare</option>
+                            <option value="san_lorenzo">San Lorenzo</option>
+                            <option value="luque">Luque</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-around">
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold">
+                            <label for="contraseña">contraseña</label>
+                            <input type="password" name="contraseña" id="contraseña" required class="rounded">
+                        </div>
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold">
+                            <label for="barrio">Barrio</label>
+                            <input type="text" name="barrio" id="barrio" required class="rounded">
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-around">
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold">
+                            <label for="numero_contacto">Número de contacto</label>
+                            <input type="text" name="numero_contacto" id="numero_contacto" required class="rounded">
+                        </div>
+                        <div class="flex flex-col h-16 w-[45%] justify-between font-bold">
+                            <label for="nombre_planta">Nombre de planta</label>
+                            <input type="text" name="nombre_planta" id="nombre_planta" required class="rounded">
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-around mt-10 font-['Montserrat']">
+                        <div>
+                            <button class="flex justify-center items-center bg-[#01261C] h-10 w-40 rounded-xl text-white hover:bg-[#F21B6A]" type="submit"><a href="/elegir_arbol">Registrar</a> </button>
+                        </div>
+                    </div>
+                </form>
+        </article>
+    </main>
+</body>
+</html>
