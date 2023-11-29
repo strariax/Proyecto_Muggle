@@ -8,6 +8,7 @@ app = Flask(__name__)
 # Configurar la URL de la base de datos
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///padrinos_registrados.db"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Inicializamos la extencion SQLALCHEMY en la aplicacion Flask
 
