@@ -52,10 +52,11 @@ for i, location in enumerate(locations):
 
     popup_content = f"""
         <div style="width:200px;">
-            <strong>Coordinate</strong><br>
+            <strong>{locations[i]}</strong><br>
             Tipo de Árbol: {tree_names[i]}<br>
             Fecha: {dates[i]}<br>
             Plantó: {volunteer_names[i]}<br>
+            Plantado por: <br>
             <img src="{image_file}" alt="{volunteer_names[i]}" style="width:100%;">
         </div>
     """
@@ -66,4 +67,4 @@ for i, location in enumerate(locations):
     ).add_to(mapPeople)
 
 # Save the map to an HTML file
-mapPeople.save("mapita_with_people_icon.html")
+mapPeople.save("mapa.html")
