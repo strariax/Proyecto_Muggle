@@ -73,6 +73,14 @@ def adoptar():
 
     return render_template('adoptar.html')
 
+#CHECAR LA RUTA DEL MAPA
+@app.route('/mapa')
+def mapa():
+    return render_template('mapa.html')
+
+'''
+#CHECAR LA RUTA DEL LOGIN
+'''
 @app.route('/login')
 
 def login():
