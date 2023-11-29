@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <title>Noticias de la Comunidad</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"> -->
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -67,11 +70,25 @@
     </style>
 </head>
 <body>
+    <header class="bg-[#F2F0C9] text-black h-32 pt-6">
+        <nav class="flex justify-between items-center"> 
+            <div>
+                <a href="/"><img class="h-32 ml-16" src="../static/logo.webp" alt="Logo"></a>               
+            </div>
+            <ul class="flex justify-around font-['Montserrat'] justify-end uppercase w-1/3 mr-16">
+                <li class="text-black hover:text-[#F21B6A]"><a href="/blog">Blog</a></li> 
+                <li class="text-black hover:text-[#F21B6A]"><a href="/mapa">Mapa</a></li>
+                <li class="text-black hover:text-[#F21B6A]"><a href="/nosotros">Nosotros</a></li>
+                <li class="text-black hover:text-[#F21B6A]"><a href="/ranking">Ranking</a></li>
+                <li><a class="bg-[#01261C] hover:bg-[#F21B6A] h-10 w-40 rounded-xl text-white p-3" href="/adoptar">Adoptar</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 class="page-title">Noticias de la comunidad</h1>
     <div class="container">
         <!-- Blog Post 1 -->
         <div class="blog-post">
-            <img src="static/plantaton3.jpeg" alt="Blog Post 1">
+            <img src="../static/plantaton1.jpeg" alt="Blog Post 1">
             <h2 class="blog-post-title"> Calendario de próximas plantatones</h2>
             <p class="blog-post-date">23 de diciembre 2023</p>
             <p class="blog-post-content">Conocé las próximas fechas que tenemos para que adoptes tu árbol digital y puedas sumarte al cambio</p>
@@ -79,7 +96,7 @@
 
         <!-- Blog Post 2 -->
         <div class="blog-post">
-            <img src="static/plantaton2.jpeg" alt="Blog Post 2">
+            <img src="../static/plantaton2.jpeg" alt="Blog Post 2">
             <h2 class="blog-post-title">Invitan a plantar árboles para combatir el calor</h2>
             <p class="blog-post-date">1 de enero 2024</p>
             <p class="blog-post-content">Jóvenes creadores de la plataforma Mi árbol digital invitan a sumar árboles en asunción con el objetivo generar más espacios verdes.</p>
@@ -87,7 +104,7 @@
 
         <!-- Blog Post 3 -->
         <div class="blog-post">
-            <img src="static/plantaton1.jpeg" alt="Blog Post 3">
+            <img src="../static/plantaton3.jpeg" alt="Blog Post 3">
             <h2 class="blog-post-title">Más de 1.000 personas ya apdrinaron árboles en Asunción</h2>
             <p class="blog-post-date">10 de marzo del 2024</p>
             <p class="blog-post-content">Mi árbol digital celebra logros en alianza con la comunidad y dona fondos para próximas plantatones</p>
