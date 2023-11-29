@@ -1,0 +1,6 @@
+requests
+Flask
+Flask-SQLAlchemy
+SQLAlchemy
+folium
+pytailwindcss
