@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de la Comunidad</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F2F0C9;
+            color: #003023;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .blog-post {
+            padding: 20px;
+            background-color: #9DC918;
+            border-radius: 10px;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .blog-post-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .blog-post-date {
+            font-size: 14px;
+            color: #003023;
+        }
+        .blog-post-content {
+            font-size: 16px;
+        }
+        .page-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .subscribe-button {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .subscribe-button a {
+            display: inline-block;
+            background-color: #003023;
+            color: #F2F0C9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">Noticias de la comunidad</h1>
+    <div class="container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="static/plantaton3.jpeg" alt="Blog Post 1">
+            <h2 class="blog-post-title"> Calendario de próximas plantatones</h2>
+            <p class="blog-post-date">23 de diciembre 2023</p>
+            <p class="blog-post-content">Conocé las próximas fechas que tenemos para que adoptes tu árbol digital y puedas sumarte al cambio</p>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <img src="static/plantaton2.jpeg" alt="Blog Post 2">
+            <h2 class="blog-post-title">Invitan a plantar árboles para combatir el calor</h2>
+            <p class="blog-post-date">1 de enero 2024</p>
+            <p class="blog-post-content">Jóvenes creadores de la plataforma Mi árbol digital invitan a sumar árboles en asunción con el objetivo generar más espacios verdes.</p>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <img src="static/plantaton1.jpeg" alt="Blog Post 3">
+            <h2 class="blog-post-title">Más de 1.000 personas ya apdrinaron árboles en Asunción</h2>
+            <p class="blog-post-date">10 de marzo del 2024</p>
+            <p class="blog-post-content">Mi árbol digital celebra logros en alianza con la comunidad y dona fondos para próximas plantatones</p>
+        </div>
+    </div>
+
+    <div class="subscribe-button">
+        <a href="#">Suscribite a nuestro Newsletter</a>
+    </div>
+</body>
+</html>
